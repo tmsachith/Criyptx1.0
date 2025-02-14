@@ -1,0 +1,28 @@
+.translator-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .phrase-search {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .phrase-item {
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .phrase-language {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
