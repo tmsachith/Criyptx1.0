@@ -1,0 +1,200 @@
+.budget-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .budget-main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .budget-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .budget-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .budget-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .budget-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .budget-item input,
+  .budget-item select,
+  .budget-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .budget-item .negative {
+    color: #e74c3c;
+  }
+  
+  .budget-item .positive {
+    color: #27ae60;
+  }
+  
+  .budget-item .converted {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .budget-suggestion {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .budget-suggestion h2 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .budget-suggestion p {
+    color: #2c3e50;
+  }
+  
+  .add-expense,
+  .expense-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .add-expense h2,
+  .expense-list h2 {
+    margin-bottom: 1rem;
+    color: #34495e;
+  }
+  
+  .add-expense form {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .add-expense input,
+  .add-expense select {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+  }
+  
+  .add-expense button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-expense button:hover {
+    background-color: #2980b9;
+  }
+  
+  .expense-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .expense-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .expense-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .expense-item {
+    border-left: 4px solid transparent;
+  }
+  
+  .expense-item.food { border-left-color: #e74c3c; }
+  .expense-item.accommodation { border-left-color: #3498db; }
+  .expense-item.transportation { border-left-color: #2ecc71; }
+  .expense-item.activities { border-left-color: #f39c12; }
+  .expense-item.other { border-left-color: #9b59b6; }
+  
+  @media (max-width: 768px) {
+    .budget-overview {
+      flex-direction: column;
+    }
+  
+    .budget-item {
+      margin: 0.5rem 0;
+    }
+  
+    .add-expense form {
+      flex-direction: column;
+    }
+  }
+
+  .get-suggestion-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .get-suggestion-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .suggestion-plan {
+    margin-top: 20px;
+  }
+  
+  .plan-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .plan-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .plan-item p {
+    margin: 5px 0;
+  }
+  

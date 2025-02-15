@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -14,11 +15,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         </div>
         <nav>
           <ul>
-            <li><a href="#home"><i className="fas fa-home"></i> Home</a></li>
-            <li><a href="#map"><i className="fas fa-map-marked-alt"></i> Interactive Map</a></li>
-            <li><a href="#budget"><i className="fas fa-wallet"></i> Budget Tracker</a></li>
-            <li><a href="#emergency"><i className="fas fa-ambulance"></i> Emergency Support</a></li>
-            <li><a href="#translate"><i className="fas fa-language"></i> Language Translation</a></li>
+            <li><Link to="/" onClick={toggleSidebar}><i className="fas fa-home"></i> Home</Link></li>
+            <li><Link to="/explore" onClick={toggleSidebar}><i className="fas fa-map-marked-alt"></i> Interactive Map</Link></li>
+            <li><Link to="/budget" onClick={toggleSidebar}><i className="fas fa-wallet"></i> Budget Tracker</Link></li>
+            <li><Link to="/emergency" onClick={toggleSidebar}><i className="fas fa-ambulance"></i> Emergency Support</Link></li>
+            <li><Link to="/translate" onClick={toggleSidebar}><i className="fas fa-language"></i> Language Translation</Link></li>
           </ul>
         </nav>
         <div className="sidebar-footer">

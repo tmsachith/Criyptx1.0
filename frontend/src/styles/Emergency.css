@@ -1,0 +1,82 @@
+.emergency-page {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .emergency-main h1 {
+    color: #d32f2f;
+    text-align: center;
+  }
+  
+  .location-container {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .loading-animation {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #d32f2f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .nearby-services {
+    margin-bottom: 20px;
+  }
+  
+  .service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .emergency-numbers ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .emergency-numbers li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .emergency-numbers li span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .emergency-numbers a {
+    color: #d32f2f;
+    text-decoration: none;
+  }
+  
+  .emergency-numbers a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .emergency-page {
+      padding: 10px;
+    }
+  }
