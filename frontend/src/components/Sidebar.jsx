@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </ul>
         </nav>
         <div className="sidebar-footer">
-          <p>&copy; 2023 LocalLens</p>
+          <p>&copy; 2025 LocalLens</p>
         </div>
       </div>
     </>
