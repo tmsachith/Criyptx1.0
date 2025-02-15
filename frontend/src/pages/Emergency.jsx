@@ -49,31 +49,33 @@ const Emergency = ({ toggleSidebar, isSidebarOpen }) => {
           {isLoading ? (
             <div className="loading-animation"></div>
           ) : (
-            <p>{location}</p>
+            <p className="location-text">{location}</p>
           )}
         </div>
 
         <div className="nearby-services">
           <h2>Nearby Emergency Services</h2>
-          {nearbyServices.map((service, index) => (
-            <div key={index} className="service-item">
-              <h3>{service.name}</h3>
-              <p>Distance: {service.distance}</p>
-              <p>Phone: <a href={`tel:${service.phone}`}>{service.phone}</a></p>
-            </div>
-          ))}
+          <div className="service-grid">
+            {nearbyServices.map((service, index) => (
+              <div key={index} className="service-item">
+                <h3>{service.name}</h3>
+                <p><strong>Distance:</strong> {service.distance}</p>
+                <p><strong>Phone:</strong> <a href={`tel:${service.phone}`}>{service.phone}</a></p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="emergency-numbers">
           <h2>Emergency Contact Numbers</h2>
-          <ul>
+          <div className="numbers-grid">
             {emergencyNumbers.map((item, index) => (
-              <li key={index}>
+              <div key={index} className="number-item">
                 <span>{item.service}:</span>
                 <a href={`tel:${item.number}`}>{item.number}</a>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </main>
       <Footer />
