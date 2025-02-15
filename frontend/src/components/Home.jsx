@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Add this import
 import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
@@ -36,7 +37,9 @@ const Home = ({ toggleSidebar, isSidebarOpen }) => {
         </section>
         <section className="cta">
           <h2>Start Your Adventure</h2>
-          <button>Explore Now</button>
+          <Link to="/explore">
+            <button>Explore Now</button>
+          </Link>
         </section>
       </main>
       <Footer />
